@@ -49,7 +49,10 @@ const RentDropDown = ({isOpen,openFilter,setConfig}) => {
               <CustomInput setConfig={setFilterConfig} name={"bathsMin"}/>
               <CustomInput setConfig={setFilterConfig} name={"bathsMax"}/>
             </div>
-            <BTN_PRIMARY onClick={()=>{setConfig(filterConfig)}} additionalStyle={"w-full"}>APPLY FILTER</BTN_PRIMARY>
+            <BTN_PRIMARY onClick={()=>{
+              openFilter(false)
+              setConfig(filterConfig)
+              }} additionalStyle={"w-full"}>APPLY FILTER</BTN_PRIMARY>
         </div>
        
     </div>
