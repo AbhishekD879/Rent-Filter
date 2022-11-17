@@ -32,7 +32,7 @@ const RentDropDown = ({isOpen,openFilter,setConfig}) => {
         Filter
       </BTN_PRIMARY>
       
-        <div className={`absolute shadow p-2 right-[2%] bg-white rounded ${isOpen&&'hidden'}`}>
+        <div className={`absolute shadow p-2 right-[2%] bg-white rounded ${!isOpen&&'hidden'}`}>
             <CustomSelect setConfig={setFilterConfig} lable={"Rent Type"} options={RENT_TYPE}/>
             <CustomSelect setConfig={setFilterConfig} lable={"Property Type"} options={PROPERTY_TYPE}/>
             {/* <CustomSelect options={[]}/> */}

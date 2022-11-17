@@ -7,7 +7,7 @@ export const fetchProperties= async(config)=>{
     const option={
         method:"GET",
         headers: {
-            'X-RapidAPI-Key': '81e883d18cmsh714fca83528295ep175194jsn0a9b7cc46966',
+            'X-RapidAPI-Key':process.env.REACT_APP_API_KEY,
             'X-RapidAPI-Host': 'bayut.p.rapidapi.com'
         },
         params:{
