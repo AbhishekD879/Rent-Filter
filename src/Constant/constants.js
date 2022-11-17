@@ -21,10 +21,10 @@ export default {
     PRIMARY_COLOR:"#7164F0",
     SECONDARY_COLOR:"#000829",
     BUTTONS:{
-        BTN_PRIMARY:({children:text,additionalStyle})=><button className={`bg-[#7164F0] hover:bg-blue-700 text-white font-bold text-sm py-1 px-1 md:py-2 md:px-4 md:text-base rounded ${additionalStyle?additionalStyle:""}`}>
+        BTN_PRIMARY:({children:text,additionalStyle,onClick})=><button onClick={onClick} className={`bg-[#7164F0] hover:bg-blue-700 text-white font-bold text-sm py-1 px-1 md:py-2 md:px-4 md:text-base rounded ${additionalStyle?additionalStyle:""}`}>
         {text}
       </button>,
-      BTN_OUTLINE:({children:text,additionalStyle})=><button className={`bg-transparent hover:bg-blue-500 text-[#7164F0] font-semibold hover:text-white text-sm py-1 px-1 md:py-2 md:px-4 md:text-base border border-[#7164F0] hover:border-transparent rounded ${additionalStyle?additionalStyle:""}`}>
+      BTN_OUTLINE:({children:text,additionalStyle,onClick})=><button onClick={onClick} className={`bg-transparent hover:bg-blue-500 text-[#7164F0] font-semibold hover:text-white text-sm py-1 px-1 md:py-2 md:px-4 md:text-base border border-[#7164F0] hover:border-transparent rounded ${additionalStyle?additionalStyle:""}`}>
       {text}
     </button>
     },

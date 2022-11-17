@@ -8,8 +8,8 @@ const PropertyBrokerInfo = ({brokerName,brokerNumber}) => {
         <div className="bg-cover bg-center w-10 h-10 rounded-full mr-3" style={{ backgroundImage: "url(https://via.placeholder.com/50x50)" }}>
         </div>
         <div>
-            <p className="font-bold text-gray-900">Catherine Heffner</p>
-            <p className="text-sm text-gray-700">(111) 111-1111</p>
+            <p className="font-bold text-gray-900">{brokerName.substring(0,20)}</p>
+            <p className="text-sm text-gray-700">{brokerNumber}</p>
         </div>
     </div>
 </div>

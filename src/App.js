@@ -10,9 +10,12 @@ import Resources from './Pages/Resources/Resources';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import Rent from './Pages/Rent/Rent';
+import {QueryClientProvider,QueryClient} from "react-query"
+const queryClient= new QueryClient()
 function App() {
   return (
     <div className="App h-full w-full">
+     <QueryClientProvider client={queryClient}>
      <Router>
       <Header/>
       <Routes>
@@ -26,6 +29,7 @@ function App() {
           <Route path='rent' element={<Rent/>}/>
       </Routes>
      </Router>
+     </QueryClientProvider>
     </div>
   );
 }
