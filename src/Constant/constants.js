@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom"
-export default {
+ const constant= {
     TYPOGRAPHY:{
         H1:({children,additionalStyle})=><h1 className={`text-6xl font-normal leading-normal mt-0 mb-2 ${additionalStyle?additionalStyle:""}`}>{children}</h1>,
         H2:({children,additionalStyle})=><h2 className={`text-5xl font-normal leading-normal mt-0 mb-2 ${additionalStyle?additionalStyle:""}`}>
@@ -57,3 +57,4 @@ export default {
     RENT_TYPE:[{name:"Monthly",val:"monthly"},{name:"Yearly",val:"yearly"},{name:"Weekly",val:"weekly"},{name:"Daily",val:"daily"}],
     FURNISHING:[{name:"unfurnished",val:"unfurnished"},{name:"furnished",val:"furnished"}]
 }
+export default constant;

@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState} from 'react'
 import PropertyCard from '../../components/PropertyCard/PropertyCard';
 import Search from '../../components/Search/Search';
 import constants from '../../Constant/constants'
@@ -32,11 +32,10 @@ const Rent = () => {
   })
   // const {data,error,loading}=useFetch("https://bayut.p.rapidapi.com/properties/list",config)
   const {data,status}= useQuery(["property",config],_=>fetchProperties(config))
-  useEffect(()=>{
-    console.log(config)
-  },[config])
   // const arr= ["sad","sadsad","sadadsad","asdsadasd","asdada","sad","sadsad","sadadsad","asdsadasd","asdada","sad","sadsad","sadadsad","asdsadasd","asdada"]
-  if(status==="error"){return <Error/>}
+  if(status==="error"||data?.data.hits.length===0){
+    return <Error setConfig={setConfig}/>
+  }
   if(status==="loading"){return <Spinner/>}
  
   return (

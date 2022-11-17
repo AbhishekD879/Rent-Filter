@@ -44,7 +44,7 @@ const RentDropDown = ({isOpen,openFilter,setConfig}) => {
               <CustomInput setConfig={setFilterConfig}  name={"roomsMin"}/>
               <CustomInput setConfig={setFilterConfig} name={"roomsMax"}/>
             </div>
-            <CustomSelect setConfig={setFilterConfig} lable={"Furnishing"} options={FURNISHING}/>
+            <CustomSelect setConfig={setFilterConfig} lable={"furnishingStatus"} options={FURNISHING}/>
             <div className='flex items-center'>
               <CustomInput setConfig={setFilterConfig} name={"bathsMin"}/>
               <CustomInput setConfig={setFilterConfig} name={"bathsMax"}/>
