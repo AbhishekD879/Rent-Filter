@@ -52,5 +52,8 @@ export default {
             name:"Resources",
             to:"/resources"
         }
-    ]
+    ],
+    PROPERTY_TYPE:[{name:"Apartment",val:4},{name:"Townhouses",val:16},{name:"Villas",val:3},{name:"Penthouses",val:18},{name:"Residential Building",val:17},{name:"Commercial Building",val:10}],
+    RENT_TYPE:[{name:"Monthly",val:"monthly"},{name:"Yearly",val:"yearly"},{name:"Weekly",val:"weekly"},{name:"Daily",val:"daily"}],
+    FURNISHING:[{name:"unfurnished",val:"unfurnished"},{name:"furnished",val:"furnished"}]
 }
